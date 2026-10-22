@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noureddine Khelfaoui | Software Developer & CS Student</title>
+  <meta name="description" content="Personal portfolio of Noureddine Khelfaoui — Computer Science student and software developer building tools, data scrapers, games, and intelligent systems.">
+  <meta name="keywords" content="Noureddine Khelfaoui, Software Developer, CS Student, Python, Java, Full Stack, Portfolio">
+  <meta name="author" content="Noureddine Khelfaoui">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Noureddine Khelfaoui | Software Developer">
+  <meta property="og:description" content="Building software, data tools, and intelligent systems. Clean code, performance optimization, and distributed workflows.">
+  <meta property="og:url" content="https://noureddine1726.github.io/">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- BACKGROUND GRID ACCENT -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- Left: Brand Logo with terminal cursor -->
+      <a href="#hero" class="brand-logo" aria-label="Noureddine Khelfaoui Portfolio Home">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">Noureddine_K.</span>
+        <span class="terminal-cursor" aria-hidden="true">_</span>
+        <span class="logo-bracket">]</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link"><span class="nav-slash">//</span> about</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-slash">//</span> projects</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-slash">//</span> skills</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-slash">//</span> contact</a></li>
+        </ul>
+        <button type="button" class="btn btn-sm btn-outline resume-btn" id="resumeTriggerBtn" aria-haspopup="dialog">
+          <span>Resume</span>
+          <svg class="icon-svg" viewBox="0 0 20 20" fill="currentColor" width="15" height="15">
+            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-link"><span class="nav-slash">//</span> about</a></li>
+        <li><a href="#projects" class="mobile-link"><span class="nav-slash">//</span> projects</a></li>
+        <li><a href="#skills" class="mobile-link"><span class="nav-slash">//</span> skills</a></li>
+        <li><a href="#contact" class="mobile-link"><span class="nav-slash">//</span> contact</a></li>
+        <li>
+          <button type="button" class="btn btn-outline w-full" id="mobileResumeBtn">
+            <span>View Resume</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="section-container hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <!-- Top greeting badge -->
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span class="badge-text">👋 Hello, World! Computer Science Student &amp; Developer</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="hero-headline">
+            Building software, data tools, and <span class="highlight-cyan">intelligent systems.</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subtitle">
+            Passionate about clean code, performance optimization, and impactful digital experiences. Currently exploring distributed architecture, automation pipelines, and object-oriented systems.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <span class="btn-arrow" aria-hidden="true">➔</span>
+            </a>
+            <a href="https://github.com/noureddine1726" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub Profile</span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <!-- Bottom sub-hero metadata status chips -->
+          <div class="hero-status-chips">
+            <div class="status-chip">
+              <span class="chip-dot-blue" aria-hidden="true"></span>
+              <span class="chip-text">YEAR_03 // B.S. CS</span>
+            </div>
+            <div class="status-chip">
+              <span class="chip-dot-green live-pulse" aria-hidden="true"></span>
+              <span class="chip-text">AVAILABLE FOR INTERNSHIPS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Code Window -->
+        <div class="hero-code-wrapper">
+          <div class="code-terminal-card" id="profileCodeWindow">
+            <!-- Window Title Bar -->
+            <div class="terminal-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="control-dot dot-red"></span>
+                <span class="control-dot dot-yellow"></span>
+                <span class="control-dot dot-green"></span>
+              </div>
+              <div class="terminal-tab">
+                <span class="tab-icon">ts</span>
+                <span class="tab-filename">profile_manifest.ts</span>
+                <span class="tab-badge">TS 4.9</span>
+              </div>
+              <button class="btn-copy-code" id="copyCodeBtn" title="Copy code" aria-label="Copy snippet to clipboard">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+                  <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                  <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 2H9a3 3 0 01-3-2z" />
+                </svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <!-- Syntax-Highlighted Code Body -->
+            <div class="terminal-body">
+              <pre class="code-block"><code><span class="code-line"><span class="line-num">01</span><span class="token-keyword">const</span> <span class="token-var">developer</span>: <span class="token-type">DeveloperProfile</span> = {</span>
+<span class="code-line"><span class="line-num">02</span>  <span class="token-prop">name</span>: <span class="token-string">"Noureddine Khelfaoui"</span>,</span>
+<span class="code-line"><span class="line-num">03</span>  <span class="token-prop">role</span>: <span class="token-string">"Junior Software Engineer"</span>,</span>
+<span class="code-line"><span class="line-num">04</span>  <span class="token-prop">status</span>: <span class="token-string">"3rd-Year CS Student"</span>,</span>
+<span class="code-line"><span class="line-num">05</span>  <span class="token-prop">focus</span>: [</span>
+<span class="code-line"><span class="line-num">06</span>    <span class="token-string">"Software Dev"</span>,</span>
+<span class="code-line"><span class="line-num">07</span>    <span class="token-string">"Data &amp; Algorithms"</span>,</span>
+<span class="code-line"><span class="line-num">08</span>    <span class="token-string">"Systems Engineering"</span></span>
+<span class="code-line"><span class="line-num">09</span>  ],</span>
+<span class="code-line"><span class="line-num">10</span>  <span class="token-prop">currentPondering</span>: () =&gt; <span class="token-string">"Optimizing I/O latency"</span></span>
+<span class="code-line"><span class="line-num">11</span>};</span>
+<span class="code-line"><span class="line-num">12</span></span>
+<span class="code-line"><span class="line-num">13</span><span class="token-var">developer</span>.<span class="token-method">initialize</span>();</span></code></pre>
+            </div>
+
+            <!-- Terminal Status Bar -->
+            <div class="terminal-footer">
+              <div class="status-left">
+                <span class="pulse-indicator"></span>
+                <span class="status-text">execution: 0.04s</span>
+              </div>
+              <div class="status-center">
+                <button type="button" class="btn-run-manifest" id="runManifestBtn">
+                  <span>Run Manifest</span>
+                  <span class="play-icon">▶</span>
+                </button>
+              </div>
+              <div class="status-right">
+                <span>UTF-8</span>
+                <span class="divider">//</span>
+                <span>LF</span>
+                <span class="divider">//</span>
+                <span>TypeScript</span>
+              </div>
+            </div>
+
+            <!-- Interactive Execution Output (toggled on click) -->
+            <div class="manifest-output" id="manifestOutput" aria-live="polite">
+              <div class="output-line"><span class="prompt-symbol">$</span> ts-node profile_manifest.ts</div>
+              <div class="output-line success-text">✓ System initialized successfully.</div>
+              <div class="output-line info-text">[DEBUG] Stack: Python, Java, SQL, Linux, Git, Web.</div>
+              <div class="output-line highlight-text">Ready for Summer/Fall 2026 engineering opportunities.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        <div class="section-kicker">
+          <span class="kicker-slash">// 01</span>
+          <span class="kicker-title">BACKGROUND &amp; PHILOSOPHY</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-card-main">
+            <h2 class="about-title">Driven by structured problem solving, clean architectures, and algorithmic rigor.</h2>
+            <p class="about-text">
+              I am a 3rd-year Computer Science student passionate about transforming theoretical computational fundamentals into real-world, high-utility tools. My development approach centers on writing clean, modular, and maintainable software with deliberate consideration for performance, object-oriented design patterns, and reliability.
+            </p>
+            <p class="about-text">
+              Whether building an automated sports analytics pipeline in Python, architecting an MVC-driven turn-based strategy game engine in Java, or developing intuitive academic web applications, I enjoy dismantling complex requirements into elegant, robust code.
+            </p>
+            <div class="about-metrics">
+              <div class="metric-item">
+                <span class="metric-num">3+</span>
+                <span class="metric-label">Years CS Academics</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">100%</span>
+                <span class="metric-label">Open Source Passion</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">&lt;1ms</span>
+                <span class="metric-label">Efficiency Mindset</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card-side">
+            <div class="card-side-header">
+              <span class="mono-label">// CORE VALUES</span>
+              <span class="status-badge-mini">STRICT</span>
+            </div>
+            <ul class="values-list">
+              <li>
+                <div class="value-bullet">01</div>
+                <div>
+                  <strong>Readability First:</strong> Code is read ten times more often than it is written.
+                </div>
+              </li>
+              <li>
+                <div class="value-bullet">02</div>
+                <div>
+                  <strong>Object-Oriented Clarity:</strong> Strict separation of concerns, SOLID principles, and low coupling.
+                </div>
+              </li>
+              <li>
+                <div class="value-bullet">03</div>
+                <div>
+                  <strong>Measurable Output:</strong> Real-world tools with deterministic latency and reproducible results.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header-block">
+          <div class="section-kicker">
+            <span class="kicker-slash">// 02</span>
+            <span class="kicker-title">FEATURED PROJECTS</span>
+          </div>
+          <h2 class="section-heading">Engineered for performance &amp; utility.</h2>
+          <p class="section-subheading">
+            A selection of student research, automation pipelines, and core algorithmic projects built to solve tangible problems.
+          </p>
+
+          <!-- Filter tags -->
+          <div class="project-filters" role="tablist" aria-label="Project category filters">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Builds (4)</button>
+            <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">Python &amp; Scraping</button>
+            <button class="filter-btn" data-filter="java" role="tab" aria-selected="false">Java &amp; OOP</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Utilities</button>
+          </div>
+        </div>
+
+        <!-- Project Cards Responsive Grid -->
+        <div class="projects-grid">
+
+          <!-- CARD 1: FPL Stat Scraper -->
+          <article class="project-card anti-gravity-card" data-category="python" id="card-fpl">
+            <div class="card-top-bar">
+              <span class="repo-name">
+                <span class="folder-icon">📁</span> fpl-stat-scraper
+              </span>
+              <span class="project-badge badge-cyan">AUTOMATION</span>
+            </div>
+
+            <!-- Terminal simulation graphic -->
+            <div class="project-visual-preview fpl-preview">
+              <div class="mini-terminal-header">
+                <span class="mini-dot"></span><span class="mini-dot"></span><span class="mini-dot"></span>
+                <span class="mini-title">fpl_engine.py — stdout</span>
+              </div>
+              <div class="mini-terminal-code">
+                <span class="term-dim">&gt;&gt; fetching gameweek fixture diff matrix...</span>
+                <span class="term-ok">✓ 20 clubs parsed [200 OK]</span>
+                <span class="term-highlight">&gt;&gt; heuristic vector: ROI efficiency +14.2%</span>
+                <span class="term-cyan">&gt;&gt; Top differential: Saka, B. (Form: 8.4)</span>
+              </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="card-body">
+              <h3 class="project-title">FPL Stat Scraper</h3>
+              <p class="project-desc">
+                Python &amp; BeautifulSoup automation tool for Fantasy Premier League player efficiency analytics, automating weekly squad selections with fixture difficulty weighting and differential acquisition vectors.
+              </p>
+
+              <div class="project-spec-strip">
+                <span class="spec-label">Throughput:</span>
+                <span class="spec-value">~600+ player vectors/min</span>
+              </div>
+
+              <!-- Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">BeautifulSoup</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Git</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="card-actions">
+                <button type="button" class="btn btn-action-primary btn-case-study" data-target="caseStudyFPL">
+                  <span>Case Study</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <a href="https://github.com/noureddine1726/fpl-stat-scraper" target="_blank" rel="noopener noreferrer" class="btn btn-action-secondary">
+                  <span>View Source</span>
+                  <span class="external-arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: Java 2D Strategy Game (Conquest Arena) -->
+          <article class="project-card anti-gravity-card" data-category="java" id="card-java-game">
+            <div class="card-top-bar">
+              <span class="repo-name">
+                <span class="folder-icon">📁</span> project-Conquest-Arena
+              </span>
+              <span class="project-badge badge-purple">GAME ENGINE</span>
+            </div>
+
+            <!-- Game Engine Visual Preview -->
+            <div class="project-visual-preview game-preview">
+              <div class="game-grid-canvas-mock">
+                <div class="grid-cell entity-cell player-unit">♞</div>
+                <div class="grid-cell tile-grass"></div>
+                <div class="grid-cell tile-mountain">▲</div>
+                <div class="grid-cell entity-cell enemy-unit">⚔</div>
+                <div class="grid-cell tile-base">🏰</div>
+                <div class="grid-cell tile-grass"></div>
+              </div>
+              <div class="game-hud-status">
+                <span>TURN: 04</span>
+                <span class="hud-divider">|</span>
+                <span>STATE: ACTIVE_COMBAT</span>
+                <span class="hud-divider">|</span>
+                <span>FPS: 60</span>
+              </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="card-body">
+              <h3 class="project-title">Java 2D Strategy Game</h3>
+              <p class="project-desc">
+                Object-oriented turn-based strategy game built from scratch in Java following MVC architecture, managing dynamic entity maps, tile colliders, resource nodes, and state machine transitions.
+              </p>
+
+              <div class="project-spec-strip">
+                <span class="spec-label">Core Logic:</span>
+                <span class="spec-value">Custom State Pattern &amp; MVC Architecture</span>
+              </div>
+
+              <!-- Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">OOP</span>
+                <span class="tech-tag">Game Logic</span>
+                <span class="tech-tag">Swing / AWT</span>
+                <span class="tech-tag">SOLID</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="card-actions">
+                <a href="https://github.com/noureddine1726/project-Conquest-Arena" target="_blank" rel="noopener noreferrer" class="btn btn-action-primary">
+                  <span>View Repository</span>
+                  <span class="external-arrow" aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-action-secondary btn-game-spec" data-target="gameSpecModal">
+                  <span>Explore Specs</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: University GPA Calculator (Moyenne ISIL) -->
+          <article class="project-card anti-gravity-card" data-category="web" id="card-gpa">
+            <div class="card-top-bar">
+              <span class="repo-name">
+                <span class="folder-icon">📁</span> moyenne--isil
+              </span>
+              <span class="project-badge badge-green">WEB APP</span>
+            </div>
+
+            <!-- GPA Calculator Visual Preview -->
+            <div class="project-visual-preview gpa-preview">
+              <div class="calculator-hud">
+                <div class="calc-metric-row">
+                  <span class="calc-label">SEMESTER GPA:</span>
+                  <span class="calc-val-pill">15.42 / 20</span>
+                </div>
+                <div class="gpa-bar-wrapper">
+                  <div class="gpa-bar-fill" style="width: 77.1%;"></div>
+                </div>
+                <div class="calc-sub-metrics">
+                  <span>CREDITS: 30/30</span>
+                  <span>STATUS: ADMIS (SESSION 1)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="card-body">
+              <h3 class="project-title">University GPA Calculator</h3>
+              <p class="project-desc">
+                Responsive web application designed to compute and project semester and cumulative GPAs under Algerian collegiate (USTHB ISIL) curriculum weights, module coefficients, and exam scoring algorithms.
+              </p>
+
+              <div class="project-spec-strip">
+                <span class="spec-label">Architecture:</span>
+                <span class="spec-value">LocalStorage Memoization Engine</span>
+              </div>
+
+              <!-- Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">USTHB Curriculum</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="card-actions">
+                <a href="https://github.com/noureddine1726/moyenne--isil" target="_blank" rel="noopener noreferrer" class="btn btn-action-primary">
+                  <span>View Source</span>
+                  <span class="external-arrow" aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-action-secondary btn-demo-gpa" id="openGpaDemoBtn">
+                  <span>Launch Simulator</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4: Personal Expense Tracker -->
+          <article class="project-card anti-gravity-card" data-category="web" id="card-expense">
+            <div class="card-top-bar">
+              <span class="repo-name">
+                <span class="folder-icon">📁</span> expense_tracker
+              </span>
+              <span class="project-badge badge-blue">FINTECH UTILITY</span>
+            </div>
+
+            <!-- Expense Tracker Preview -->
+            <div class="project-visual-preview expense-preview">
+              <div class="expense-chart-mock">
+                <div class="bar-col" style="height: 45%;" title="Software: 45%"><span class="bar-tag">DEV</span></div>
+                <div class="bar-col" style="height: 75%;" title="Hosting: 75%"><span class="bar-tag">OPS</span></div>
+                <div class="bar-col" style="height: 30%;" title="Books: 30%"><span class="bar-tag">EDU</span></div>
+                <div class="bar-col" style="height: 90%;" title="Tools: 90%"><span class="bar-tag">SYS</span></div>
+              </div>
+              <div class="expense-hud-footer">
+                <span>NET MONTHLY BALANCE: +32.4%</span>
+              </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="card-body">
+              <h3 class="project-title">Personal Expense Tracker</h3>
+              <p class="project-desc">
+                Modular personal finance tracking application featuring categorical budgeting, ledger history, transaction breakdowns, and client-side data persistence.
+              </p>
+
+              <div class="project-spec-strip">
+                <span class="spec-label">Storage:</span>
+                <span class="spec-value">Client Persistent State &amp; Dynamic Totals</span>
+              </div>
+
+              <!-- Tags -->
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">DOM Manipulation</span>
+                <span class="tech-tag">LocalStorage</span>
+                <span class="tech-tag">Analytics</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="card-actions">
+                <a href="https://github.com/noureddine1726/expense_tracker" target="_blank" rel="noopener noreferrer" class="btn btn-action-primary">
+                  <span>View Repository</span>
+                  <span class="external-arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section" id="skills">
+      <div class="section-container">
+        <!-- Section Kicker & Title -->
+        <div class="section-kicker">
+          <span class="kicker-slash">// 03</span>
+          <span class="kicker-title">03/01 --SKILLS --VERBOSE</span>
+        </div>
+        <h2 class="section-heading">// Technical Arsenal &amp; Tooling</h2>
+        <p class="section-subheading">
+          Languages, low-level compilers, developer runtimes, and engineering fundamentals practiced in collegiate coursework and personal builds.
+        </p>
+
+        <!-- 3-Column Skills Grid matching UI Layout -->
+        <div class="skills-panels-grid">
+
+          <!-- PANEL 1: LANGUAGES -->
+          <div class="skill-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="panel-icon">💻</span>
+                <h3 class="panel-title">LANGUAGES</h3>
+              </div>
+              <span class="panel-badge">01 Core</span>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Python -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-tag-pill tag-primary">Primary</span>
+                </div>
+                <p class="skill-details">Scripting, Scikit, BeautifulSoup, Data Parsing, Matplotlib</p>
+                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-tag-pill tag-academic">Academic</span>
+                </div>
+                <p class="skill-details">OOP, Collections, Architecture, Swing / AWT, MVC Design</p>
+                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <!-- SQL -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-tag-pill tag-structured">Structured</span>
+                </div>
+                <p class="skill-details">Schema Design, Queries, Joins, Relational DBs, Normalization</p>
+                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <span class="footer-code-meta">Coursework: CS201 Data Structures, CS304 DBMS</span>
+            </div>
+          </div>
+
+          <!-- PANEL 2: TOOLS & ENVIRONMENTS -->
+          <div class="skill-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="panel-icon">🛠</span>
+                <h3 class="panel-title">TOOLS &amp; ENVIRONMENTS</h3>
+              </div>
+              <span class="panel-badge">02 Verified</span>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Linux (WSL) -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Linux (WSL)</span>
+                  <span class="skill-tag-pill">Ubuntu</span>
+                </div>
+                <p class="skill-details">CLI workflows, Bash scripting, system utilities, process management</p>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-tag-pill">Version Control</span>
+                </div>
+                <p class="skill-details">Branching strategies, commit hygiene, Pull Requests, merge resolution</p>
+              </div>
+
+              <!-- JetBrains & VS Code -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">JetBrains &amp; VS Code</span>
+                  <span class="skill-tag-pill">IDEs</span>
+                </div>
+                <p class="skill-details">IntelliJ IDEA, PyCharm, debugger instrumentation, terminal profiling</p>
+              </div>
+
+              <!-- Figma -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-tag-pill">Design</span>
+                </div>
+                <p class="skill-details">Wireframing, UI prototyping, responsive grid component systems</p>
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <span class="footer-code-meta">SHELL CONSOLE: ZSH + TMUX • POSIX COMPLIANT</span>
+            </div>
+          </div>
+
+          <!-- PANEL 3: CORE CONCEPTS -->
+          <div class="skill-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="panel-icon">⚡</span>
+                <h3 class="panel-title">CORE CONCEPTS</h3>
+              </div>
+              <span class="panel-badge">Foundations</span>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- OOP Paradigm -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">OOP Paradigm</span>
+                  <span class="skill-tag-pill tag-accent">Architecture</span>
+                </div>
+                <p class="skill-details">Encapsulation, Polymorphism, Inheritance, SOLID principles, Interfaces</p>
+              </div>
+
+              <!-- Data Structures & Algorithms -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Data Structures &amp; Algos</span>
+                  <span class="skill-tag-pill tag-accent">Core</span>
+                </div>
+                <p class="skill-details">Trees, Graphs, Sorting, Hash Maps, Big-O computational complexity</p>
+              </div>
+
+              <!-- Web Scraping & ETL -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Web Scraping &amp; ETL</span>
+                  <span class="skill-tag-pill">Pipelines</span>
+                </div>
+                <p class="skill-details">DOM traversal, rate-limiting, data cleaning, JSON serialization</p>
+              </div>
+
+              <!-- REST API Integration -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">REST API Integration</span>
+                  <span class="skill-tag-pill">Network</span>
+                </div>
+                <p class="skill-details">HTTP methods, payload handling, async promises, status error handling</p>
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <span class="footer-code-meta">METHOD: TEST-FIRST • PROD READY</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLABORATION / INTERNSHIP CALLOUT BANNER -->
+    <section class="collab-section">
+      <div class="section-container">
+        <div class="collab-card">
+          <div class="collab-info">
+            <div class="collab-badge">
+              <span class="pulse-indicator"></span>
+              <span>2026 RECRUITMENT CYCLE</span>
+            </div>
+            <h3 class="collab-title">Interested in collaborating or hiring for 2026?</h3>
+            <p class="collab-desc">
+              Looking for Summer / Fall Software Engineering Internships &amp; collaborative builds. Eager to contribute to production codebases and data platforms.
+            </p>
+          </div>
+          <div class="collab-action">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Get in Touch</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-kicker">
+          <span class="kicker-slash">// 04</span>
+          <span class="kicker-title">COMMUNICATIONS CHANNEL</span>
+        </div>
+        <h2 class="section-heading">// Establish Handshake</h2>
+        <p class="section-subheading">
+          Feel free to reach out for software engineering internships, technical collaborations, or code reviews.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Channels List -->
+          <div class="contact-card">
+            <h3 class="contact-card-title">Direct Connection Details</h3>
+            
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/>
+                  <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">EMAIL ADDRESS</span>
+                <span class="channel-value" id="valEmail">noureddinekhelfaoui64@gmail.com</span>
+              </div>
+              <button type="button" class="btn-copy-chip copy-trigger" data-copy="noureddinekhelfaoui64@gmail.com" aria-label="Copy Email">
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">PHONE NUMBER</span>
+                <span class="channel-value" id="valPhone">0781539169</span>
+              </div>
+              <button type="button" class="btn-copy-chip copy-trigger" data-copy="0781539169" aria-label="Copy Phone">
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.894.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">DISCORD ID</span>
+                <span class="channel-value" id="valDiscord">noureddine6197</span>
+              </div>
+              <button type="button" class="btn-copy-chip copy-trigger" data-copy="noureddine6197" aria-label="Copy Discord Handle">
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">GITHUB REPOSITORIES</span>
+                <span class="channel-value">github.com/noureddine1726</span>
+              </div>
+              <a href="https://github.com/noureddine1726" target="_blank" rel="noopener noreferrer" class="btn-copy-chip link-chip">
+                <span>Visit ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-card">
+            <h3 class="contact-card-title">Send a Direct Transmission</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="senderName" class="form-label">YOUR NAME</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">YOUR EMAIL</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="e.g. jane@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">TRANSMISSION MESSAGE</label>
+                <textarea id="senderMessage" rows="4" class="form-input" placeholder="Discussing an internship opportunity, project collaboration, or code inquiry..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full" id="submitMsgBtn">
+                <span>Dispatch Message</span>
+                <span class="btn-arrow">➔</span>
+              </button>
+              <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MINIMALIST FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Status indicator -->
+      <div class="footer-status">
+        <span class="pulse-indicator live-green" aria-hidden="true"></span>
+        <span class="status-title">⚡ ALL SYSTEMS NORMAL</span>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <span>© 2026 Noureddine Khelfaoui. Built with precision and clean code.</span>
+      </div>
+
+      <!-- Social and back-to-top links -->
+      <div class="footer-links">
+        <a href="https://github.com/noureddine1726" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="mailto:noureddinekhelfaoui64@gmail.com" class="footer-social-link" aria-label="Send Email">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+        </a>
+        <a href="#hero" class="btn-back-to-top" title="Back to top" aria-label="Back to top">
+          <span class="arrow-up">▲</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================== -->
+  <!-- MODAL 1: CASE STUDY - FPL STAT SCRAPER (Panel 4 from UI) -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="caseStudyFPL" role="dialog" aria-modal="true" aria-labelledby="modalFplTitle" aria-hidden="true">
+    <div class="case-study-modal-container">
+      
+      <!-- Top Navigation Header -->
+      <div class="modal-top-nav">
+        <button type="button" class="modal-back-btn" id="closeCaseStudyBtn">
+          <span class="back-arrow">←</span>
+          <span>Back to Portfolio</span>
+        </button>
+        <div class="modal-nav-links">
+          <a href="#cs-overview" class="modal-tab-link active">Overview</a>
+          <a href="#cs-architecture" class="modal-tab-link">Architecture</a>
+          <a href="#cs-benchmarks" class="modal-tab-link">Benchmarks</a>
+        </div>
+        <div class="modal-brand">
+          <span>Noureddine_K.</span>
+          <span class="terminal-cursor">_</span>
+        </div>
+      </div>
+
+      <!-- Modal Body Content -->
+      <div class="modal-scroll-content">
+        <!-- Banner Metadata -->
+        <div class="case-banner-meta">
+          <span class="meta-tag">AUTOMATION PIPELINE // VERSION 1.4.3</span>
+          <span class="meta-hash">ID: FPL-DNL-9800.IO</span>
+        </div>
+
+        <!-- Case Title & Subtitle -->
+        <div class="case-title-row">
+          <div>
+            <h1 class="case-title" id="modalFplTitle">FPL Stat Scraper</h1>
+            <p class="case-subtitle">
+              Automating Fantasy Premier League player analytics. High-frequency heuristic scoring, fixture difficulty weighting, and differential acquisition vectors.
+            </p>
+          </div>
+          <div class="case-actions">
+            <a href="https://github.com/noureddine1726/fpl-stat-scraper" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <span>View Source Code</span>
+              <span class="external-arrow">↗</span>
+            </a>
+            <button type="button" class="btn btn-primary btn-sm" id="runAnalysisLiveBtn">
+              <span>Run Live Analysis</span>
+              <span class="bolt-icon">⚡</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tech Badges -->
+        <div class="case-tags-strip">
+          <span class="tech-badge">PYTHON 3.11</span>
+          <span class="tech-badge">BEAUTIFULSOUP 4</span>
+          <span class="tech-badge">REST APIS</span>
+          <span class="tech-badge">GIT CLI</span>
+          <span class="tech-badge">PANDAS</span>
+        </div>
+
+        <!-- 4 Key Benchmarks Cards Grid -->
+        <div class="benchmarks-grid" id="cs-benchmarks">
+          <div class="benchmark-card">
+            <span class="bm-label">EXECUTION LATENCY</span>
+            <div class="bm-value-row">
+              <span class="bm-value">0.84</span>
+              <span class="bm-unit">ms</span>
+            </div>
+            <span class="bm-note">Per single player vector computation</span>
+          </div>
+
+          <div class="benchmark-card">
+            <span class="bm-label">FIXTURES PARSED</span>
+            <div class="bm-value-row">
+              <span class="bm-value">38</span>
+              <span class="bm-unit">/ wk</span>
+            </div>
+            <span class="bm-note">Gameweek schedule matrices synced</span>
+          </div>
+
+          <div class="benchmark-card">
+            <span class="bm-label">DATA ACCURACY</span>
+            <div class="bm-value-row">
+              <span class="bm-value">99.8</span>
+              <span class="bm-unit">%</span>
+            </div>
+            <span class="bm-note">Zero drop rate with failover headers</span>
+          </div>
+
+          <div class="benchmark-card">
+            <span class="bm-label">THROUGHPUT</span>
+            <div class="bm-value-row">
+              <span class="bm-value">~600+</span>
+              <span class="bm-unit">vect/min</span>
+            </div>
+            <span class="bm-note">Threaded streaming batch pipeline</span>
+          </div>
+        </div>
+
+        <!-- Detailed 2-Column Technical Deep Dive -->
+        <div class="case-content-grid" id="cs-overview">
+          
+          <!-- Left Column: Architectural Breakdown -->
+          <div class="case-col-left">
+            <div class="cs-section-block">
+              <h3 class="cs-heading"><span class="num-prefix">01.</span> THE OVERVIEW</h3>
+              <p class="cs-text">
+                Manual squad and spreadsheet calculations create acute cognitive bottleneck delays and suboptimal transfer executions prior to strict lock deadlines. By decoupling real-time underlying performance indicators from market volatility, the pipeline delivers algorithmic confidence before price adjustments take place.
+              </p>
+            </div>
+
+            <div class="cs-section-block">
+              <h3 class="cs-heading"><span class="num-prefix">02.</span> KEY CAPABILITIES</h3>
+              
+              <div class="capability-item">
+                <div class="cap-head">
+                  <span class="cap-title">Automated Data Extraction</span>
+                  <span class="cap-code">#00.01</span>
+                </div>
+                <p class="cap-desc">
+                  Headless session scraper extracting raw live telemetry: expected goals (xG), assists (xA), fixture difficulty ratings (FDR), and real-time positional heatmaps across 20 clubs.
+                </p>
+              </div>
+
+              <div class="cap-item capability-item">
+                <div class="cap-head">
+                  <span class="cap-title">Algorithmic ROI Calculation</span>
+                  <span class="cap-code">#00.02</span>
+                </div>
+                <p class="cap-desc">
+                  Proprietary weighted heuristic computing true points-per-cost efficiency curves. Rank regression uncovers high-potential undervalued differential players under 5% ownership prior to gameweek deadlines.
+                </p>
+              </div>
+
+              <div class="cap-item capability-item">
+                <div class="cap-head">
+                  <span class="cap-title">Terminal Data Visualization</span>
+                  <span class="cap-code">#00.03</span>
+                </div>
+                <p class="cap-desc">
+                  Synthesized terminal text-based UI utilizing rich-color schemes and formatted tables to display instant captaincy picks, rotation risks, and automated transfer alerts directly in stdout.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pipeline Topology Diagram -->
+            <div class="cs-section-block" id="cs-architecture">
+              <h3 class="cs-heading"><span class="num-prefix">03.</span> PIPELINE TOPOLOGY</h3>
+              <div class="pipeline-flow-diagram">
+                <div class="flow-step">
+                  <span class="step-role">Parser</span>
+                  <span class="step-tech">BS4 / Requests</span>
+                  <span class="step-meta">Ingestion: 120req/s</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step">
+                  <span class="step-role">Normalizer</span>
+                  <span class="step-tech">JSON Schema Fixer</span>
+                  <span class="step-meta">Null-proof Types</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step">
+                  <span class="step-role">Optimizer</span>
+                  <span class="step-tech">Linear Heuristic</span>
+                  <span class="step-meta">Zero Drop Loss</span>
+                </div>
+                <div class="flow-arrow">➔</div>
+                <div class="flow-step">
+                  <span class="step-role">Export</span>
+                  <span class="step-tech">CSV / CLI</span>
+                  <span class="step-meta">Instant stdout</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Code & Live Terminal Runner -->
+          <div class="case-col-right">
+            <!-- Code Window with file tabs -->
+            <div class="modal-code-window">
+              <div class="mcw-header">
+                <div class="mcw-tabs">
+                  <button type="button" class="mcw-tab active" data-file="fpl_engine">
+                    <span class="tab-dot"></span> fpl_engine.py
+                  </button>
+                  <button type="button" class="mcw-tab" data-file="stats_analyser">
+                    <span class="tab-dot"></span> stats_analyser.py
+                  </button>
+                </div>
+                <span class="mcw-badge">RAW</span>
+              </div>
+
+              <!-- Code tab 1: fpl_engine.py -->
+              <div class="mcw-body active-tab-content" id="tab-fpl_engine">
+                <pre class="mcw-pre"><code><span class="c-dim">01</span> <span class="c-kw">import</span> requests
+<span class="c-dim">02</span> <span class="c-kw">from</span> bs4 <span class="c-kw">import</span> BeautifulSoup
+<span class="c-dim">03</span> <span class="c-kw">from</span> dataclasses <span class="c-kw">import</span> dataclass
+<span class="c-dim">04</span> 
+<span class="c-dim">05</span> <span class="c-dec">@dataclass</span>
+<span class="c-dim">06</span> <span class="c-kw">class</span> <span class="c-cls">PlayerEfficiency</span>:
+<span class="c-dim">07</span>     name: <span class="c-typ">str</span>
+<span class="c-dim">08</span>     team: <span class="c-typ">str</span>
+<span class="c-dim">09</span>     form: <span class="c-typ">float</span>
+<span class="c-dim">10</span>     roi_score: <span class="c-typ">float</span>
+<span class="c-dim">11</span> 
+<span class="c-dim">12</span> <span class="c-kw">class</span> <span class="c-cls">FPLStaticEngine</span>:
+<span class="c-dim">13</span>     <span class="c-kw">def</span> <span class="c-fn">__init__</span>(self, api_endpoint: <span class="c-typ">str</span>):
+<span class="c-dim">14</span>         self.endpoint = api_endpoint
+<span class="c-dim">15</span>         self.session = requests.Session()
+<span class="c-dim">16</span> 
+<span class="c-dim">17</span>     <span class="c-kw">def</span> <span class="c-fn">scrape_gameweek_metrics</span>(self, gw_idx: <span class="c-typ">int</span>):
+<span class="c-dim">18</span>         <span class="c-com"># Automated bootstrap telemetry parsing</span>
+<span class="c-dim">19</span>         raw_data = self.session.get(f<span class="c-str">"{self.endpoint}/bootstrap-static/"</span>)
+<span class="c-dim">20</span>         players = raw_data.json()[<span class="c-str">"elements"</span>]
+<span class="c-dim">21</span>         <span class="c-kw">return</span> [
+<span class="c-dim">22</span>             PlayerEfficiency(
+<span class="c-dim">23</span>                 name=p[<span class="c-str">"web_name"</span>],
+<span class="c-dim">24</span>                 team=p[<span class="c-str">"team_code"</span>],
+<span class="c-dim">25</span>                 form=float(p[<span class="c-str">"form"</span>]),
+<span class="c-dim">26</span>                 roi_score=round(float(p[<span class="c-str">"total_points"</span>]) / (p[<span class="c-str">"now_cost"</span>] / 10), 2)
+<span class="c-dim">27</span>             )
+<span class="c-dim">28</span>             <span class="c-kw">for</span> p <span class="c-kw">in</span> players <span class="c-kw">if</span> float(p[<span class="c-str">"form"</span>]) &gt;= 5.0
+<span class="c-dim">29</span>         ]</code></pre>
+              </div>
+
+              <!-- Code tab 2: stats_analyser.py -->
+              <div class="mcw-body" id="tab-stats_analyser">
+                <pre class="mcw-pre"><code><span class="c-dim">01</span> <span class="c-kw">def</span> <span class="c-fn">calculate_differential_vectors</span>(efficiency_pool, max_ownership=5.0):
+<span class="c-dim">02</span>     <span class="c-str">"""Filter high ROI assets with low global ownership percentage"""</span>
+<span class="c-dim">03</span>     differentials = []
+<span class="c-dim">04</span>     <span class="c-kw">for</span> player <span class="c-kw">in</span> efficiency_pool:
+<span class="c-dim">05</span>         <span class="c-kw">if</span> player.ownership &lt;= max_ownership <span class="c-kw">and</span> player.roi_score &gt;= 7.0:
+<span class="c-dim">06</span>             fdr_weight = 1.0 - (player.fixture_difficulty * 0.08)
+<span class="c-dim">07</span>             adjusted_score = player.roi_score * fdr_weight
+<span class="c-dim">08</span>             differentials.append({
+<span class="c-dim">09</span>                 <span class="c-str">"name"</span>: player.name,
+<span class="c-dim">10</span>                 <span class="c-str">"team"</span>: player.team,
+<span class="c-dim">11</span>                 <span class="c-str">"score"</span>: round(adjusted_score, 2),
+<span class="c-dim">12</span>                 <span class="c-str">"status"</span>: <span class="c-str">"PRIME_DIFFERENTIAL"</span>
+<span class="c-dim">13</span>             })
+<span class="c-dim">14</span>     <span class="c-kw">return</span> sorted(differentials, key=<span class="c-kw">lambda</span> x: x[<span class="c-str">"score"</span>], reverse=True)</code></pre>
+              </div>
+
+              <!-- Terminal Live Execution Output -->
+              <div class="mcw-terminal-output" id="mcwTerminal">
+                <div class="term-status-line">
+                  <span class="prompt-icon">&gt;</span>
+                  <span class="cmd-run">RUNNING: OUTPUT // GW24_SCRAPE.PY</span>
+                  <span class="term-timer">09:15 LIVE</span>
+                </div>
+                <div class="term-data-box">
+                  <div class="term-log">[24/38] Scraper runtime: 612 vectors evaluated | Top Pick: <span class="term-accent">Haaland (ROI: 8.82)</span> [Differential: <span class="term-accent">Bowen (ROI: 7.14)</span>]</div>
+                  <div class="term-ascii-table">
+                    +--------------------+-------+------+--------+------------+<br>
+                    | PLAYER             | CLUB  | FORM | COST   | ROI SCORE  |<br>
+                    +--------------------+-------+------+--------+------------+<br>
+                    | • B. Saka          | ARS   | 8.4  | £10.2m | 8.32       |<br>
+                    | • E. Haaland       | MCI   | 9.2  | £14.3m | 8.82       |<br>
+                    | • J. Bowen         | WHU   | 6.8  | £7.8m  | 7.14       |<br>
+                    | • C. Palmer        | CHE   | 7.9  | £10.8m | 8.40       |<br>
+                    +--------------------+-------+------+--------+------------+<br>
+                    Filter threshold: Form &gt;= 5.0 | Cost &lt;= £15.0m     [Report OK]
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Next in pipeline teaser -->
+        <div class="case-study-next-teaser">
+          <div>
+            <span class="teaser-label">UP NEXT IN PIPELINE</span>
+            <h4 class="teaser-title">Java 2D Strategy Game ➔</h4>
+            <p class="teaser-desc">Custom rendering engine, A* pathfinding heuristics, and tick-synchronized multiplayer architecture.</p>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm" id="jumpToJavaSpec">
+            <span>View Game Architecture</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL 2: JAVA 2D STRATEGY GAME ARCHITECTURE SPEC MODAL   -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="gameSpecModal" role="dialog" aria-modal="true" aria-labelledby="modalGameTitle" aria-hidden="true">
+    <div class="spec-modal-container">
+      <div class="modal-top-nav">
+        <button type="button" class="modal-back-btn" id="closeGameSpecBtn">
+          <span class="back-arrow">←</span>
+          <span>Close Architecture</span>
+        </button>
+        <div class="modal-brand">
+          <span>project-Conquest-Arena // ARCHITECTURE</span>
+        </div>
+      </div>
+
+      <div class="spec-modal-body">
+        <h2 class="case-title" id="modalGameTitle">Java 2D Strategy Game Architecture</h2>
+        <p class="case-subtitle">Turn-based grid strategy engine designed with rigorous Object-Oriented principles (MVC, SOLID, Strategy Pattern).</p>
+
+        <div class="spec-cards-grid">
+          <div class="spec-card">
+            <h4>📦 com.strategygame.model</h4>
+            <p>Core state machine, resource economies, and 2D grid matrix. Contains immutable tile models, terrain collision checks, and unit status trees.</p>
+          </div>
+          <div class="spec-card">
+            <h4>🎮 com.strategygame.controller</h4>
+            <p>Synchronous game loop, turn transitions, event dispatcher, and movement path validators enforcing turn boundaries and action points.</p>
+          </div>
+          <div class="spec-card">
+            <h4>🖥 com.strategygame.view</h4>
+            <p>AWT/Swing double-buffered custom canvas renderer delivering smooth 60 FPS sprite and grid animations without visual tearing.</p>
+          </div>
+        </div>
+
+        <div class="modal-footer-cta">
+          <a href="https://github.com/noureddine1726/project-Conquest-Arena" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Explore Complete Code on GitHub</span>
+            <span class="external-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL 3: GPA CALCULATOR INTERACTIVE SIMULATOR            -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="gpaModal" role="dialog" aria-modal="true" aria-labelledby="modalGpaTitle" aria-hidden="true">
+    <div class="spec-modal-container">
+      <div class="modal-top-nav">
+        <button type="button" class="modal-back-btn" id="closeGpaBtn">
+          <span class="back-arrow">←</span>
+          <span>Close Simulator</span>
+        </button>
+        <div class="modal-brand">
+          <span>moyenne--isil // USTHB SIMULATOR</span>
+        </div>
+      </div>
+
+      <div class="spec-modal-body">
+        <h2 class="case-title" id="modalGpaTitle">USTHB ISIL Semester Simulator</h2>
+        <p class="case-subtitle">Interactive demonstration of module weighted averages and credit validation logic.</p>
+
+        <div class="gpa-sim-table-wrap">
+          <table class="sim-table">
+            <thead>
+              <tr>
+                <th>MODULE</th>
+                <th>CREDIT</th>
+                <th>COEFF</th>
+                <th>TD / TP (40%)</th>
+                <th>EXAM (60%)</th>
+                <th>MODULE AVG</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Data Structures (CS201)</strong></td>
+                <td>6</td>
+                <td>3</td>
+                <td><input type="number" class="sim-input" id="td1" value="16" min="0" max="20" step="0.5"></td>
+                <td><input type="number" class="sim-input" id="ex1" value="14.5" min="0" max="20" step="0.5"></td>
+                <td><span class="mod-avg-val" id="avg1">15.10 / 20</span></td>
+              </tr>
+              <tr>
+                <td><strong>OOP &amp; Java (ISIL202)</strong></td>
+                <td>5</td>
+                <td>3</td>
+                <td><input type="number" class="sim-input" id="td2" value="17" min="0" max="20" step="0.5"></td>
+                <td><input type="number" class="sim-input" id="ex2" value="16" min="0" max="20" step="0.5"></td>
+                <td><span class="mod-avg-val" id="avg2">16.40 / 20</span></td>
+              </tr>
+              <tr>
+                <td><strong>Database Systems (CS304)</strong></td>
+                <td>5</td>
+                <td>2</td>
+                <td><input type="number" class="sim-input" id="td3" value="15" min="0" max="20" step="0.5"></td>
+                <td><input type="number" class="sim-input" id="ex3" value="14" min="0" max="20" step="0.5"></td>
+                <td><span class="mod-avg-val" id="avg3">14.40 / 20</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sim-result-box">
+          <div class="sim-result-score">
+            <span class="res-label">SEMESTER AVERAGE:</span>
+            <span class="res-num" id="totalGpaScore">15.41 / 20</span>
+          </div>
+          <div class="sim-result-status">
+            <span class="res-status-tag">STATUS: ADMIS (COMPENSATION VALIDATED)</span>
+          </div>
+        </div>
+
+        <div class="modal-footer-cta">
+          <a href="https://github.com/noureddine1726/moyenne--isil" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>Inspect Full Repo on GitHub</span>
+            <span class="external-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL 4: INTERACTIVE RESUME VIEW / PRINT MODAL           -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="modalResumeTitle" aria-hidden="true">
+    <div class="resume-modal-container">
+      <div class="modal-top-nav">
+        <button type="button" class="modal-back-btn" id="closeResumeBtn">
+          <span class="back-arrow">←</span>
+          <span>Close Resume</span>
+        </button>
+        <div class="resume-actions-group">
+          <button type="button" class="btn btn-secondary btn-sm" id="printResumeBtn">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
+              <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd" />
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-document-sheet" id="resumeDocument">
+        <!-- Resume Header -->
+        <div class="resume-sheet-header">
+          <div>
+            <h1 class="resume-name" id="modalResumeTitle">Noureddine Khelfaoui</h1>
+            <p class="resume-role-sub">Software Developer &amp; Computer Science Student</p>
+          </div>
+          <div class="resume-contact-block">
+            <div><strong>Location:</strong> Algiers, Algeria</div>
+            <div><strong>Email:</strong> noureddinekhelfaoui64@gmail.com</div>
+            <div><strong>Phone:</strong> 0781539169</div>
+            <div><strong>GitHub:</strong> github.com/noureddine1726</div>
+          </div>
+        </div>
+
+        <hr class="resume-divider">
+
+        <!-- Education -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">EDUCATION</h3>
+          <div class="resume-entry">
+            <div class="entry-header">
+              <span class="entry-title">Bachelor of Science in Computer Science (ISIL)</span>
+              <span class="entry-date">2023 – 2026</span>
+            </div>
+            <div class="entry-org">University of Science and Technology Houari Boumediene (USTHB)</div>
+            <p class="entry-desc">
+              Key Coursework: Object-Oriented Programming (Java), Data Structures &amp; Algorithms, Database Management Systems (SQL), Operating Systems (Linux/POSIX), Systems Architecture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">TECHNICAL SKILLS</h3>
+          <ul class="resume-skills-list">
+            <li><strong>Languages:</strong> Python, Java (Core &amp; OOP), SQL, JavaScript, HTML5/CSS3, C/C++ (Basics)</li>
+            <li><strong>Tools &amp; Systems:</strong> Linux (Ubuntu / WSL), Git, GitHub, JetBrains IDEs (IntelliJ, PyCharm), VS Code, Figma</li>
+            <li><strong>Engineering Concepts:</strong> MVC Architecture, SOLID Principles, Automated Web Scraping, REST APIs, Big-O Optimization</li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">KEY ENGINEERING PROJECTS</h3>
+          
+          <div class="resume-entry">
+            <div class="entry-header">
+              <span class="entry-title">FPL Stat Scraper (Python &amp; BeautifulSoup)</span>
+              <span class="entry-link"><a href="https://github.com/noureddine1726/fpl-stat-scraper" target="_blank">github.com/noureddine1726/fpl-stat-scraper</a></span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Engineered an automated data pipeline scraping Premier League telemetry (xG, xA, FDR) across 600+ player vectors per minute.</li>
+              <li>Calculated proprietary ROI efficiency metrics to identify undervalued differential players before weekly gameweek lockouts.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-header">
+              <span class="entry-title">Java 2D Strategy Game (Java &amp; OOP)</span>
+              <span class="entry-link"><a href="https://github.com/noureddine1726/project-Conquest-Arena" target="_blank">github.com/noureddine1726/project-Conquest-Arena</a></span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Implemented turn-based strategy game following strict Model-View-Controller architecture and SOLID design patterns.</li>
+              <li>Engineered dynamic tile grid pathfinding, collision bounds, and double-buffered AWT/Swing canvas rendering at stable 60 FPS.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="entry-header">
+              <span class="entry-title">University GPA Calculator (JavaScript &amp; Responsive Web)</span>
+              <span class="entry-link"><a href="https://github.com/noureddine1726/moyenne--isil" target="_blank">github.com/noureddine1726/moyenne--isil</a></span>
+            </div>
+            <ul class="resume-bullets">
+              <li>Designed and built an Algerian collegiate GPA projection web application with modular coefficient weighting.</li>
+              <li>Implemented local persistent storage memoization, allowing seamless multi-semester academic projections.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Languages & Interests -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">COMMUNICATION &amp; INTERESTS</h3>
+          <p class="resume-desc">
+            <strong>Languages:</strong> English (Professional Working Proficiency), French (Bilingual/Fluent), Arabic (Native)<br>
+            <strong>Interests:</strong> High-performance computing, algorithmic problem solving, open-source automation tools.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- MAIN SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
