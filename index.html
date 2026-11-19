@@ -13,7 +13,6 @@
   <meta property="og:title" content="Noureddine Khelfaoui | Software Developer">
   <meta property="og:description" content="Building software, data tools, and intelligent systems. Clean code, performance optimization, and distributed workflows.">
   <meta property="og:url" content="https://noureddine1726.github.io/">
-<canvas id="spider-canvas"></canvas>
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +23,7 @@
 <body class="dark-theme">
 
   <!-- BACKGROUND GRID ACCENT -->
+   <canvas id="spider-canvas"></canvas>
   <div class="bg-grid-overlay" aria-hidden="true"></div>
 
   <!-- NAVIGATION -->
@@ -80,27 +80,24 @@
   <main>
     <!-- HERO SECTION -->
     <section class="hero-section" id="hero">
-      <div class="section-container hero-grid">
+      
+        <div class="section-container hero-grid">
         
         <!-- Left Hero Content -->
         <div class="hero-content">
-          <!-- Top greeting badge -->
           <div class="hero-badge">
             <span class="badge-dot" aria-hidden="true"></span>
-            <span class="badge-text">👋 Hello, World! Computer Science Student &amp; Developer</span>
+            <span class="badge-text">👋 L3 ISIL CS Student @ USTHB // Full-Stack &amp; Cloud</span>
           </div>
 
-          <!-- Main Headline -->
           <h1 class="hero-headline">
-            Building software, data tools, and <span class="highlight-cyan">intelligent systems.</span>
+            Building full-stack platforms, cloud workflows, and <span class="highlight-cyan">intelligent systems.</span>
           </h1>
 
-          <!-- Subtitle -->
           <p class="hero-subtitle">
-            Passionate about clean code, performance optimization, and impactful digital experiences. Currently exploring distributed architecture, automation pipelines, and object-oriented systems.
+            Full-Stack Developer &amp; 3rd-year ISIL Computer Science student at USTHB. I architect scalable web applications with Next.js, NestJS, and Docker, build automated data pipelines in Python, and serve as Event Management Lead at the AWS Student Builder Group.
           </p>
 
-          <!-- Action Buttons -->
           <div class="hero-cta-group">
             <a href="#projects" class="btn btn-primary">
               <span>Explore Projects</span>
@@ -115,15 +112,14 @@
             </a>
           </div>
 
-          <!-- Bottom sub-hero metadata status chips -->
           <div class="hero-status-chips">
             <div class="status-chip">
               <span class="chip-dot-blue" aria-hidden="true"></span>
-              <span class="chip-text">YEAR_03 // B.S. CS</span>
+              <span class="chip-text">L3 ISIL // USTHB ALGIERS</span>
             </div>
             <div class="status-chip">
               <span class="chip-dot-green live-pulse" aria-hidden="true"></span>
-              <span class="chip-text">AVAILABLE FOR INTERNSHIPS</span>
+              <span class="chip-text">AWS CLOUD CLUB EVENT LEAD</span>
             </div>
           </div>
         </div>
@@ -131,7 +127,6 @@
         <!-- Right Hero Interactive Code Window -->
         <div class="hero-code-wrapper">
           <div class="code-terminal-card" id="profileCodeWindow">
-            <!-- Window Title Bar -->
             <div class="terminal-header">
               <div class="window-controls" aria-hidden="true">
                 <span class="control-dot dot-red"></span>
@@ -141,7 +136,7 @@
               <div class="terminal-tab">
                 <span class="tab-icon">ts</span>
                 <span class="tab-filename">profile_manifest.ts</span>
-                <span class="tab-badge">TS 4.9</span>
+                <span class="tab-badge">TS 5.x</span>
               </div>
               <button class="btn-copy-code" id="copyCodeBtn" title="Copy code" aria-label="Copy snippet to clipboard">
                 <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14">
@@ -152,24 +147,22 @@
               </button>
             </div>
 
-            <!-- Syntax-Highlighted Code Body -->
             <div class="terminal-body">
               <pre class="code-block"><code><span class="code-line"><span class="line-num">01</span><span class="token-keyword">const</span> <span class="token-var">developer</span>: <span class="token-type">DeveloperProfile</span> = {</span>
 <span class="code-line"><span class="line-num">02</span>  <span class="token-prop">name</span>: <span class="token-string">"Noureddine Khelfaoui"</span>,</span>
-<span class="code-line"><span class="line-num">03</span>  <span class="token-prop">role</span>: <span class="token-string">"Junior Software Engineer"</span>,</span>
-<span class="code-line"><span class="line-num">04</span>  <span class="token-prop">status</span>: <span class="token-string">"3rd-Year CS Student"</span>,</span>
-<span class="code-line"><span class="line-num">05</span>  <span class="token-prop">focus</span>: [</span>
-<span class="code-line"><span class="line-num">06</span>    <span class="token-string">"Software Dev"</span>,</span>
-<span class="code-line"><span class="line-num">07</span>    <span class="token-string">"Data &amp; Algorithms"</span>,</span>
-<span class="code-line"><span class="line-num">08</span>    <span class="token-string">"Systems Engineering"</span></span>
-<span class="code-line"><span class="line-num">09</span>  ],</span>
-<span class="code-line"><span class="line-num">10</span>  <span class="token-prop">currentPondering</span>: () =&gt; <span class="token-string">"Optimizing I/O latency"</span></span>
-<span class="code-line"><span class="line-num">11</span>};</span>
-<span class="code-line"><span class="line-num">12</span></span>
+<span class="code-line"><span class="line-num">03</span>  <span class="token-prop">role</span>: <span class="token-string">"Full-Stack Developer &amp; L3 ISIL Student"</span>,</span>
+<span class="code-line"><span class="line-num">04</span>  <span class="token-prop">location</span>: <span class="token-string">"Algiers, Algeria (USTHB)"</span>,</span>
+<span class="code-line"><span class="line-num">05</span>  <span class="token-prop">community</span>: <span class="token-string">"AWS Student Builder Group Event Lead"</span>,</span>
+<span class="code-line"><span class="line-num">06</span>  <span class="token-prop">stack</span>: [</span>
+<span class="code-line"><span class="line-num">07</span>    <span class="token-string">"Next.js / React / NestJS"</span>,</span>
+<span class="code-line"><span class="line-num">08</span>    <span class="token-string">"Python / Java / TypeScript"</span>,</span>
+<span class="code-line"><span class="line-num">09</span>    <span class="token-string">"PostgreSQL / Docker / AWS"</span></span>
+<span class="code-line"><span class="line-num">10</span>  ],</span>
+<span class="code-line"><span class="line-num">11</span>  <span class="token-prop">currentBuild</span>: () =&gt; <span class="token-string">"Aegis Logistics Platform"</span></span>
+<span class="code-line"><span class="line-num">12</span>};</span>
 <span class="code-line"><span class="line-num">13</span><span class="token-var">developer</span>.<span class="token-method">initialize</span>();</span></code></pre>
             </div>
 
-            <!-- Terminal Status Bar -->
             <div class="terminal-footer">
               <div class="status-left">
                 <span class="pulse-indicator"></span>
@@ -184,18 +177,17 @@
               <div class="status-right">
                 <span>UTF-8</span>
                 <span class="divider">//</span>
-                <span>LF</span>
+                <span>WSL</span>
                 <span class="divider">//</span>
                 <span>TypeScript</span>
               </div>
             </div>
 
-            <!-- Interactive Execution Output (toggled on click) -->
             <div class="manifest-output" id="manifestOutput" aria-live="polite">
               <div class="output-line"><span class="prompt-symbol">$</span> ts-node profile_manifest.ts</div>
               <div class="output-line success-text">✓ System initialized successfully.</div>
-              <div class="output-line info-text">[DEBUG] Stack: Python, Java, SQL, Linux, Git, Web.</div>
-              <div class="output-line highlight-text">Ready for Summer/Fall 2026 engineering opportunities.</div>
+              <div class="output-line info-text">[STACK] Next.js, NestJS, TypeScript, Python, Java, PostgreSQL, Docker, AWS.</div>
+              <div class="output-line highlight-text">Building Aegis Logistics Platform &amp; Leading AWS Cloud Club USTHB Events.</div>
             </div>
           </div>
         </div>
@@ -211,26 +203,26 @@
           <span class="kicker-title">BACKGROUND &amp; PHILOSOPHY</span>
         </div>
         <div class="about-grid">
-          <div class="about-card-main">
-            <h2 class="about-title">Driven by structured problem solving, clean architectures, and algorithmic rigor.</h2>
+         <div class="about-card-main">
+            <h2 class="about-title">Full-Stack Engineer, Cloud Builder, and L3 ISIL Student at USTHB.</h2>
             <p class="about-text">
-              I am a 3rd-year Computer Science student passionate about transforming theoretical computational fundamentals into real-world, high-utility tools. My development approach centers on writing clean, modular, and maintainable software with deliberate consideration for performance, object-oriented design patterns, and reliability.
+              I am a 3rd-year Computer Science student specializing in Software &amp; Information Systems Engineering (ISIL) at USTHB in Algiers. I focus on building end-to-end web platforms, containerized backends, and automated data pipelines with clean architecture and measurable performance.
             </p>
             <p class="about-text">
-              Whether building an automated sports analytics pipeline in Python, architecting an MVC-driven turn-based strategy game engine in Java, or developing intuitive academic web applications, I enjoy dismantling complex requirements into elegant, robust code.
+              Recently, I engineered <strong>Aegis</strong>, a full-stack emergency logistics and real-time resource tracking platform built with Next.js, NestJS, PostgreSQL, and Docker. Outside of software development, I serve as the <strong>Event Management Lead</strong> for the AWS Student Builder Group at USTHB, organizing cloud workshops and technical events for 150+ students.
             </p>
             <div class="about-metrics">
               <div class="metric-item">
-                <span class="metric-num">3+</span>
-                <span class="metric-label">Years CS Academics</span>
+                <span class="metric-num">L3 ISIL</span>
+                <span class="metric-label">USTHB Algiers</span>
               </div>
               <div class="metric-item">
-                <span class="metric-num">100%</span>
-                <span class="metric-label">Open Source Passion</span>
+                <span class="metric-num">150+</span>
+                <span class="metric-label">AWS Event Reach</span>
               </div>
               <div class="metric-item">
-                <span class="metric-num">&lt;1ms</span>
-                <span class="metric-label">Efficiency Mindset</span>
+                <span class="metric-num">5+</span>
+                <span class="metric-label">Shipped Projects</span>
               </div>
             </div>
           </div>
@@ -612,150 +604,147 @@
             </div>
 
             <div class="skill-items-list">
-              <!-- Python -->
               <div class="skill-row">
                 <div class="skill-name-row">
-                  <span class="skill-name">Python</span>
-                  <span class="skill-tag-pill tag-primary">Primary</span>
+                  <span class="skill-name">TypeScript &amp; JavaScript</span>
+                  <span class="skill-tag-pill tag-primary">Full-Stack</span>
                 </div>
-                <p class="skill-details">Scripting, Scikit, BeautifulSoup, Data Parsing, Matplotlib</p>
+                <p class="skill-details">ES6+, Async/Await, DOM, Type-safe REST APIs, Node.js runtime</p>
                 <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%;"></div></div>
               </div>
 
-              <!-- Java -->
               <div class="skill-row">
                 <div class="skill-name-row">
-                  <span class="skill-name">Java</span>
-                  <span class="skill-tag-pill tag-academic">Academic</span>
+                  <span class="skill-name">Python</span>
+                  <span class="skill-tag-pill tag-primary">Automation</span>
                 </div>
-                <p class="skill-details">OOP, Collections, Architecture, Swing / AWT, MVC Design</p>
+                <p class="skill-details">BeautifulSoup, Matplotlib, ttkbootstrap GUI, GitHub Actions ETL</p>
+                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Java &amp; C</span>
+                  <span class="skill-tag-pill tag-academic">Systems &amp; OOP</span>
+                </div>
+                <p class="skill-details">OOP, MVC, Swing/AWT, Flex/Bison compilers, memory fundamentals</p>
                 <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
               </div>
 
-              <!-- SQL -->
               <div class="skill-row">
                 <div class="skill-name-row">
-                  <span class="skill-name">SQL</span>
-                  <span class="skill-tag-pill tag-structured">Structured</span>
+                  <span class="skill-name">SQL (PostgreSQL &amp; Oracle)</span>
+                  <span class="skill-tag-pill tag-structured">Databases</span>
                 </div>
-                <p class="skill-details">Schema Design, Queries, Joins, Relational DBs, Normalization</p>
-                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 80%;"></div></div>
+                <p class="skill-details">Relational schema design, Prisma ORM, migrations, query tuning</p>
+                <div class="skill-level-bar"><div class="skill-level-fill" style="width: 82%;"></div></div>
               </div>
             </div>
 
             <div class="panel-footer">
-              <span class="footer-code-meta">Coursework: CS201 Data Structures, CS304 DBMS</span>
+              <span class="footer-code-meta">USTHB ISIL: Data Structures, DBMS, Compilers</span>
             </div>
           </div>
 
-          <!-- PANEL 2: TOOLS & ENVIRONMENTS -->
+          <!-- PANEL 2: FULL-STACK & CLOUD -->
+          <div class="skill-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <span class="panel-icon">🚀</span>
+                <h3 class="panel-title">FULL-STACK &amp; CLOUD</h3>
+              </div>
+              <span class="panel-badge">02 Stack</span>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Next.js &amp; React</span>
+                  <span class="skill-tag-pill tag-accent">Frontend</span>
+                </div>
+                <p class="skill-details">App Router, responsive UI, interactive Leaflet OpenStreetMap maps</p>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">NestJS &amp; Node.js</span>
+                  <span class="skill-tag-pill tag-accent">Backend</span>
+                </div>
+                <p class="skill-details">Modular CRUD architecture, DTO validation, Prisma ORM integration</p>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Docker &amp; DevOps</span>
+                  <span class="skill-tag-pill">Containers</span>
+                </div>
+                <p class="skill-details">Docker Compose, PostgreSQL containers, GitHub Actions CI, Netlify</p>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">AWS Cloud</span>
+                  <span class="skill-tag-pill tag-primary">Credly Verified</span>
+                </div>
+                <p class="skill-details">AWS Skill Builder, Cloud Club USTHB Core Team &amp; Event Lead</p>
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <span class="footer-code-meta">DEPLOY: DOCKER • GITHUB ACTIONS • NETLIFY</span>
+            </div>
+          </div>
+
+          <!-- PANEL 3: TOOLS & DESIGN -->
           <div class="skill-panel">
             <div class="panel-header">
               <div class="panel-title-group">
                 <span class="panel-icon">🛠</span>
-                <h3 class="panel-title">TOOLS &amp; ENVIRONMENTS</h3>
+                <h3 class="panel-title">TOOLS &amp; DESIGN</h3>
               </div>
-              <span class="panel-badge">02 Verified</span>
+              <span class="panel-badge">03 Workflow</span>
             </div>
 
             <div class="skill-items-list">
-              <!-- Linux (WSL) -->
               <div class="skill-row">
                 <div class="skill-name-row">
-                  <span class="skill-name">Linux (WSL)</span>
-                  <span class="skill-tag-pill">Ubuntu</span>
+                  <span class="skill-name">Linux (WSL Ubuntu)</span>
+                  <span class="skill-tag-pill">OS</span>
                 </div>
-                <p class="skill-details">CLI workflows, Bash scripting, system utilities, process management</p>
+                <p class="skill-details">CLI workflows, Bash scripting, SSH, process &amp; port debugging</p>
               </div>
 
-              <!-- Git & GitHub -->
               <div class="skill-row">
                 <div class="skill-name-row">
                   <span class="skill-name">Git &amp; GitHub</span>
-                  <span class="skill-tag-pill">Version Control</span>
+                  <span class="skill-tag-pill">VCS</span>
                 </div>
-                <p class="skill-details">Branching strategies, commit hygiene, Pull Requests, merge resolution</p>
+                <p class="skill-details">Branching workflows, team PR reviews, automated Actions pipelines</p>
               </div>
 
-              <!-- JetBrains & VS Code -->
+              <div class="skill-row">
+                <div class="skill-name-row">
+                  <span class="skill-name">Figma UI/UX</span>
+                  <span class="skill-tag-pill">GDG Algiers</span>
+                </div>
+                <p class="skill-details">Wireframing, dark/light design systems, interactive prototypes</p>
+              </div>
+
               <div class="skill-row">
                 <div class="skill-name-row">
                   <span class="skill-name">JetBrains &amp; VS Code</span>
                   <span class="skill-tag-pill">IDEs</span>
                 </div>
-                <p class="skill-details">IntelliJ IDEA, PyCharm, debugger instrumentation, terminal profiling</p>
-              </div>
-
-              <!-- Figma -->
-              <div class="skill-row">
-                <div class="skill-name-row">
-                  <span class="skill-name">Figma</span>
-                  <span class="skill-tag-pill">Design</span>
-                </div>
-                <p class="skill-details">Wireframing, UI prototyping, responsive grid component systems</p>
+                <p class="skill-details">IntelliJ IDEA, PyCharm, MSYS2/MinGW64, integrated debugging</p>
               </div>
             </div>
 
             <div class="panel-footer">
-              <span class="footer-code-meta">SHELL CONSOLE: ZSH + TMUX • POSIX COMPLIANT</span>
-            </div>
-          </div>
-
-          <!-- PANEL 3: CORE CONCEPTS -->
-          <div class="skill-panel">
-            <div class="panel-header">
-              <div class="panel-title-group">
-                <span class="panel-icon">⚡</span>
-                <h3 class="panel-title">CORE CONCEPTS</h3>
-              </div>
-              <span class="panel-badge">Foundations</span>
-            </div>
-
-            <div class="skill-items-list">
-              <!-- OOP Paradigm -->
-              <div class="skill-row">
-                <div class="skill-name-row">
-                  <span class="skill-name">OOP Paradigm</span>
-                  <span class="skill-tag-pill tag-accent">Architecture</span>
-                </div>
-                <p class="skill-details">Encapsulation, Polymorphism, Inheritance, SOLID principles, Interfaces</p>
-              </div>
-
-              <!-- Data Structures & Algorithms -->
-              <div class="skill-row">
-                <div class="skill-name-row">
-                  <span class="skill-name">Data Structures &amp; Algos</span>
-                  <span class="skill-tag-pill tag-accent">Core</span>
-                </div>
-                <p class="skill-details">Trees, Graphs, Sorting, Hash Maps, Big-O computational complexity</p>
-              </div>
-
-              <!-- Web Scraping & ETL -->
-              <div class="skill-row">
-                <div class="skill-name-row">
-                  <span class="skill-name">Web Scraping &amp; ETL</span>
-                  <span class="skill-tag-pill">Pipelines</span>
-                </div>
-                <p class="skill-details">DOM traversal, rate-limiting, data cleaning, JSON serialization</p>
-              </div>
-
-              <!-- REST API Integration -->
-              <div class="skill-row">
-                <div class="skill-name-row">
-                  <span class="skill-name">REST API Integration</span>
-                  <span class="skill-tag-pill">Network</span>
-                </div>
-                <p class="skill-details">HTTP methods, payload handling, async promises, status error handling</p>
-              </div>
-            </div>
-
-            <div class="panel-footer">
-              <span class="footer-code-meta">METHOD: TEST-FIRST • PROD READY</span>
+              <span class="footer-code-meta">METHOD: SOLID • MVC • AGILE TEAM LEAD</span>
             </div>
           </div>
 
         </div>
-      </div>
     </section>
 
     <!-- COLLABORATION / INTERNSHIP CALLOUT BANNER -->
@@ -773,7 +762,22 @@
             </p>
           </div>
           <div class="collab-action">
+          
             <a href="#contact" class="btn btn-primary btn-lg">
+            <div class="contact-channel-item">
+              <div class="channel-icon-wrap">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">LINKEDIN PROFILE</span>
+                <span class="channel-value">in/noureddine-khelfaoui-652341324</span>
+              </div>
+              <a href="https://www.linkedin.com/in/noureddine-khelfaoui-652341324" target="_blank" rel="noopener noreferrer" class="btn-copy-chip link-chip">
+                <span>Visit ↗</span>
+              </a>
+            </div>
               <span>Get in Touch</span>
               <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -1376,16 +1380,14 @@
           <h3 class="resume-section-title">EDUCATION</h3>
           <div class="resume-entry">
             <div class="entry-header">
-              <span class="entry-title">Bachelor of Science in Computer Science (ISIL)</span>
-              <span class="entry-date">2023 – 2026</span>
+              <span class="entry-title">Aegis Logistics Platform (Next.js, NestJS, PostgreSQL, Docker)</span>
+              <span class="entry-link"><a href="https://github.com/noureddine1726/aegis-logistics-platform" target="_blank">github.com/noureddine1726/aegis-logistics-platform</a></span>
             </div>
-            <div class="entry-org">University of Science and Technology Houari Boumediene (USTHB)</div>
-            <p class="entry-desc">
-              Key Coursework: Object-Oriented Programming (Java), Data Structures &amp; Algorithms, Database Management Systems (SQL), Operating Systems (Linux/POSIX), Systems Architecture.
-            </p>
+            <ul class="resume-bullets">
+              <li>Built a full-stack emergency logistics and real-time resource tracking platform with interactive OpenStreetMap (Leaflet) routing.</li>
+              <li>Containerized PostgreSQL with Docker and engineered modular NestJS CRUD APIs with Prisma ORM for organization and inventory management.</li>
+            </ul>
           </div>
-        </div>
-
         <!-- Technical Skills -->
         <div class="resume-section">
           <h3 class="resume-section-title">TECHNICAL SKILLS</h3>
