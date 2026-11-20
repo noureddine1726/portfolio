@@ -50,8 +50,8 @@ const canvas = document.getElementById('spider-canvas');
     }
   }
 
-  for (let i = 0; i < 75; i++) particles.push(new Particle());
-
+  const particleCount = window.innerWidth < 768 ? 60 : 120;
+for (let i = 0; i < particleCount; i++) particles.push(new Particle());
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < particles.length; i++) {
